@@ -16,7 +16,7 @@ const festPosts =[
     styles: ["Techno", "Electro", "Trance"],
     writer: "Henry Christoph",
     elevation: 1250, 
-    date: "January 1, 2014"
+    date: "March 1, 2020"
   }, 
   {
     name: "Snowboxx", 
@@ -27,7 +27,7 @@ const festPosts =[
     styles: ["Techno", "Electric"],
     writer: "Richard Connel",
     elevation: 2472, 
-    date: "January 1, 2014"
+    date: "January 4, 2020"
   }, 
   {
     name: "Secret Solstice", 
@@ -38,7 +38,7 @@ const festPosts =[
     styles: ["Indie", "Pop", "Rock"],
     writer: "Khris Cowley",
     elevation: 427, 
-    date: "January 1, 2014"
+    date: "December 30, 2019"
   }, 
   {
     name: "Trænafestivalen", 
@@ -49,7 +49,7 @@ const festPosts =[
     styles: ["Country", "Pop", ""],
     writer: "Fusce dapibus",
     elevation: 1739, 
-    date: "January 1, 2014"
+    date: "December 1, 2019"
   }, 
   ]
   
@@ -75,7 +75,7 @@ function App() {
             <div class="col-sm-12 col-md-9">
               <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
                 <div class="col-md-6 px-0">
-                  <h1 class="display-4 font-italic">FESTIVALS TODAY</h1>
+                  <h1 class="display-4 font-italic">MOUNTAIN FESTIVALS</h1>
                   <p class="lead my-3">Find out more about best Mountain music festivals of the world</p>
                 </div>
               </div>

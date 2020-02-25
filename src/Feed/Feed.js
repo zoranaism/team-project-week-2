@@ -9,21 +9,19 @@ export default function Feed(props) {
         <img class="card-img-top" src="https://picsum.photos/300/200" alt="" />
 
         <div class="card-body">
-          
             {props.styles.map(style => {
               return <span class="badge badge-info mr-2">{style}</span>
             })}
 
-            <h2 class="card-title">{props.name}</h2>
-            <p class="blockquote">
-            Written by: <cite title="Source Title">{props.writer}</cite> 
-            </p>
-            <p class="card-subtitle">Location: {props.location}</p>
-
-            <p>Time of the Year: {props.season}<br />
-            Date: {props.date}<br />
+            <h2 class="card-title mt-3">{props.name}</h2>
+            
+            <p class="card-text">Location: {props.location}<br />
+            Time of the Year: {props.season}<br />
             Elevation: {props.elevation}</p>
-            <p class="card-text">About: {props.text}</p>  
+            <div>
+              <p>{props.text}</p>
+              <footer>Written by: {props.writer} on {props.date}</footer>
+            </div>
         </div>
         
         
