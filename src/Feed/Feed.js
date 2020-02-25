@@ -5,17 +5,17 @@ export default function Feed(props) {
     <div className="col-12 col-sm-6">
 
     
-      <div class="article card mb-4">
-        <img class="card-img-top" src="https://picsum.photos/300/200" alt="" />
+      <div className="article card mb-4">
+        <img className="card-img-top" src="https://picsum.photos/300/200" alt="" />
 
-        <div class="card-body">
+        <div className="card-body">
             {props.styles.map(style => {
-              return <span class="badge badge-info mr-2">{style}</span>
+              return <span className="badge badge-info mr-2">{style}</span>
             })}
 
-            <h2 class="card-title mt-3">{props.name}</h2>
+            <h2 className="card-title mt-3">{props.name}</h2>
             
-            <p class="card-text">Location: {props.location}<br />
+            <p className="card-text">Location: {props.location}<br />
             Time of the Year: {props.season}<br />
             Elevation: {props.elevation}</p>
             <div>
@@ -25,9 +25,9 @@ export default function Feed(props) {
         </div>
         
         
-          <div class="card-footer">
-          <a href="#" class="btn btn-primary mr-2">{props.like ? "yes, liked" : "not liked"}</a>
-          <a href="ReadLink:" class="btn btn-primary">Read the article</a>
+          <div className="card-footer">
+          <a href="#" className="btn btn-primary mr-2">{props.like ? "yes, liked" : "not liked"}</a>
+          <a href="ReadLink:" className="btn btn-primary">Read the article</a>
           </div>
 
       </div>

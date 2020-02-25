@@ -63,23 +63,23 @@ function App() {
       {/* MAIN CONTAINER */}
       <main>
       
-        <div class="container">
-          <div class="row">
+        <div className="container">
+          <div className="row">
             
             {/* LEFT SIDEBAR */}
-            <div class="col-sm-12 col-md-3">
+            <div className="col-sm-12 col-md-3">
               <Navigation />
             </div>
 
             {/* RIGHT SIDE CONTENT */}
-            <div class="col-sm-12 col-md-9">
-              <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
-                <div class="col-md-6 px-0">
-                  <h1 class="display-4 font-italic">MOUNTAIN FESTIVALS</h1>
-                  <p class="lead my-3">Find out more about best Mountain music festivals of the world</p>
+            <div className="col-sm-12 col-md-9">
+              <div className="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+                <div className="col-md-6 px-0">
+                  <h1 className="display-4 font-italic">MOUNTAIN FESTIVALS</h1>
+                  <p className="lead my-3">Find out more about best Mountain music festivals of the world</p>
                 </div>
               </div>
-              <div class="row">
+              <div className="row">
               {festPosts.map(festPost => (
                 <Feed name={festPost.name} season={festPost.season} location={festPost.location} text={festPost.text}  like={festPost.like} styles={festPost.styles} writer={festPost.writer} elevation={festPost.elevation} date={festPost.date} />
                 ))} 
