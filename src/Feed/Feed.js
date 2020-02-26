@@ -1,4 +1,5 @@
 import React from "react";
+import LikeButton from "./LikeButton";
 
 export default function Feed(props) {
   return (
@@ -13,7 +14,7 @@ export default function Feed(props) {
               return <span className="badge badge-info mr-2">{style}</span>
             })}
 
-            <h2 className="card-title mt-3">{props.name}</h2>
+            <h3 className="card-title mt-3">{props.name}</h3>
             
             <p className="card-text">Location: {props.location}<br />
             Time of the Year: {props.season}<br />
@@ -26,8 +27,9 @@ export default function Feed(props) {
         
         
           <div className="card-footer">
-          <a href="#" className="btn btn-primary mr-2">{props.like ? "yes, liked" : "not liked"}</a>
-          <a href="ReadLink:" className="btn btn-primary">Read the article</a>
+          {/* <a href="#" className="btn btn-primary mr-2">{props.like ? "yes, liked" : "not liked"}</a> */}
+          <LikeButton like={props.like}/>
+          <a href="#" className="">Read the article</a>
           </div>
 
       </div>
