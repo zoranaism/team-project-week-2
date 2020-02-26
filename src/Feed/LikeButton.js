@@ -5,7 +5,6 @@ export default function LikeButton(props) {
   const [numLikes, set_numLikes] = useState(initial_numLikes);
 
   const increment = () => {
-    console.log("Yes, clicked! Current number of likes:", numLikes);
     set_numLikes(numLikes + 1);
   };
 

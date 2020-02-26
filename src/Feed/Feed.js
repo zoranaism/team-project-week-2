@@ -1,5 +1,7 @@
 import React from "react";
 import LikeButton from "./LikeButton";
+import ReadLater from "./ReadLater";
+
 
 export default function Feed(props) {
   return (
@@ -21,7 +23,7 @@ export default function Feed(props) {
             Elevation: {props.elevation}</p>
             <div>
               <p>{props.text}</p>
-              <footer>Written by: {props.writer} on {props.date}</footer>
+              <footer>Written by: {props.writer} on {props.date} </footer>
             </div>
         </div>
         
@@ -30,6 +32,7 @@ export default function Feed(props) {
           {/* <a href="#" className="btn btn-primary mr-2">{props.like ? "yes, liked" : "not liked"}</a> */}
           <LikeButton like={props.like}/>
           <a href="#" className="">Read the article</a>
+          <ReadLater />
           </div>
 
       </div>

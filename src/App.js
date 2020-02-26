@@ -6,7 +6,6 @@ import Navigation from "./Navigation/Navigation"
 import Feed from "./Feed/Feed";
 import Footer from "./Footer/Footer";
 
-  
 
 function App() {
 
