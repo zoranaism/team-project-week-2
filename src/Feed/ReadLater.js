@@ -1,27 +1,17 @@
 import React, { useState } from "react";
 
-
 export default function ReadLater(props) {
-  const [likeValue, setValue] = useState(false); 
+  const [likeValue, setValue] = useState(false);
 
   const stateChange = () => {
-    if (likeValue === false)
-    {
-      setValue(true);
-      document.getElementById("button").classList.add('btn-info');
-      document.getElementById("button").classList.remove('btn-primary');
-    } else {
-      setValue(false);
-      document.getElementById("button").classList.add('btn-primary');
-      document.getElementById("button").classList.remove('btn-info');
-    }
+    setValue(!likeValue);
   };
+
+  const classNames = likeValue ? "btn btn-info" : "btn btn-primary";
 
   return (
     <div>
-      <button id="button" className="btn btn-primary" onClick={stateChange}>
-      </button>
+      <button id="button" className={classNames} onClick={stateChange}>Save for later</button>
     </div>
   );
-
 }
